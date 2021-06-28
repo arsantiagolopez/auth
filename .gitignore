@@ -1,0 +1,24 @@
+# Build & Next.js
+**/.vercel/
+**/.next/
+**/dist/
+
+# Dependency directories
+**/node_modules/
+**/.yarn*
+
+# Environment variables
+**/.env
+**/.env.production
+
+# Logs
+**/.DS_*
+**/*.log
+**/logs
+**/*.backup.*
+**/*.back.*
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/lerna-debug.log*
+**/.pnpm-debug.log*

@@ -1,0 +1,35 @@
+{
+  "name": "authentication",
+  "version": "0.1.0",
+  "description": "Next.js frontend for the Authentication webapp.",
+  "private": true,
+  "author": "arsantiagolopez",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next dev -p 9000",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.13",
+    "@chakra-ui/react": "^1.6.1",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@urql/devtools": "^2.0.3",
+    "@urql/exchange-graphcache": "^4.1.1",
+    "focus-visible": "^5.2.0",
+    "framer-motion": "^4",
+    "graphql": "^15.5.0",
+    "isomorphic-unfetch": "^3.1.0",
+    "moment": "^2.29.1",
+    "next": "10.2.0",
+    "next-urql": "^3.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.6.6",
+    "react-icons": "^4.2.0",
+    "react-is": "^17.0.2",
+    "urql": "^2.0.3",
+    "vercel": "^23.0.1"
+  }
+}

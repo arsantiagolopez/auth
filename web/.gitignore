@@ -1,0 +1,17 @@
+# Build & Next.js
+.vercel
+.next
+
+# Dependency directories
+node_modules/
+.yarn/*
+
+# Environment variables
+.env
+
+# Logs
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*

@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend for the Authentication webapp.",
+  "main": "index.js",
+  "author": "arsantiagolopez",
+  "license": "ISC",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "nodemon --exec babel-node src/index.js",
+    "serve": "node dist/index.js"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.4",
+    "apollo-server-express": "^2.24.0",
+    "argon2": "^0.27.2",
+    "connect-redis": "^5.2.0",
+    "dotenv": "^9.0.2",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "graphql": "^15.5.0",
+    "graphql-middleware": "^6.0.10",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth2": "^0.2.0",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "redis": "^3.1.2",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.14.5",
+    "nodemon": "^2.0.7"
+  }
+}
