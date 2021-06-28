@@ -5,6 +5,7 @@
 
 # Dependency directories
 **/node_modules/
+**/yarn*
 **/.yarn*
 
 # Environment variables
@@ -15,10 +16,6 @@
 **/.DS_*
 **/*.log
 **/logs
-**/*.backup.*
-**/*.back.*
 **/npm-debug.log*
 **/yarn-debug.log*
 **/yarn-error.log*
-**/lerna-debug.log*
-**/.pnpm-debug.log*
