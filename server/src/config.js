@@ -9,6 +9,8 @@ export default {
   port: process.env.PORT || 4000,
   // Cookie name
   cookieName: process.env.COOKIE_NAME || "cid",
+  // Session secret key
+  sessionSecret: process.env.SESSION_SECRET || "Auth Secret Key",
   // Database URL
   databaseUrl: process.env.DATABASE_URL,
 
@@ -24,8 +26,6 @@ export default {
 
   // Authentication
   auth: {
-    // JWT secret key
-    jwt: { secret: process.env.JWT_SECRET || "Auth Secret Key" },
     // Facebook keys
     facebook: {
       // App ID

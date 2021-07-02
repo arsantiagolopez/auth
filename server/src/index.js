@@ -17,7 +17,7 @@ import Schema from "./schema";
 const CLIENT_URL = Config.api.clientUrl;
 const COOKIE_NAME = Config.cookieName;
 const NODE_ENV = Config.nodeEnv;
-const JWT_SECRET = Config.auth.jwt.secret;
+const SESSION_SECRET = Config.sessionSecret;
 const PORT = Config.port;
 const SERVER_URL = Config.api.serverUrl;
 const REDIS_URL = Config.api.redisUrl;
@@ -58,7 +58,7 @@ app.use(
       // Change from lax to none if different api & web domains
       sameSite: NODE_ENV === "production" ? "none" : "lax",
     },
-    secret: JWT_SECRET,
+    secret: SESSION_SECRET,
     resave: false,
     // Only save data when needed
     saveUninitialized: false,
