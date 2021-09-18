@@ -5,7 +5,7 @@ import React from "react";
 const Logo = () => (
   <Link href="/">
     <Flex {...styles.wrapper}>
-      <Heading {...styles.heading}>Authentication</Heading>
+      <Heading {...styles.heading}>Auth</Heading>
     </Flex>
   </Link>
 );

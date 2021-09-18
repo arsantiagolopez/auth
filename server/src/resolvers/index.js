@@ -45,9 +45,7 @@ export default {
     myProfilePicture: (_, __, { req }) => {
       const picture = req.session.userPictureUrl;
 
-      if (!picture) {
-        return null;
-      }
+      if (!picture) return null;
 
       return picture;
     },
@@ -324,8 +322,8 @@ export default {
       );
 
       // Send email with template & reset link
-      const subject = "Reset your password - Authentication";
-      const html = `<h2>Authentication</h2><p>Let's recover your account. Click on the link below to reset your password.<p/><a href="${CLIENT_URL}/password-reset/${token}">Reset your password</a>`;
+      const subject = "Reset your password - Auth";
+      const html = `<h2>Auth</h2><p>Let's recover your account. Click on the link below to reset your password.<p/><a href="${CLIENT_URL}/password-reset/${token}">Reset your password</a>`;
 
       await sendEmail(email, subject, html);
 
@@ -342,10 +340,7 @@ export default {
 
       const userId = await new Promise((resolve) => {
         redisClient.get(key, (err, reply) => {
-          if (err) {
-            console.log(err);
-            resolve(null);
-          }
+          if (err) resolve(null);
           // reply holds value for userId key
           resolve(reply);
         });

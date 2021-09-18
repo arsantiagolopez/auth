@@ -74,7 +74,7 @@ const PasswordReset = () => {
   return (
     <Layout hideNavigation>
       <Head>
-        <title>Reset Your Password - Authentication</title>
+        <title>Reset Your Password - Auth</title>
       </Head>
       <Flex {...styles.wrapper}>
         <Flex {...styles.content}>

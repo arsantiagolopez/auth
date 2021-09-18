@@ -55,7 +55,7 @@ const Auth = () => {
   return (
     <Layout hideNavigation>
       <Head>
-        <title>Authentication</title>
+        <title>Auth</title>
       </Head>
       <Flex {...styles.wrapper} height={screenHeight}>
         <Flex {...styles.content}>

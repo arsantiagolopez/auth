@@ -1,7 +1,7 @@
 {
-  "name": "authentication",
+  "name": "auth",
   "version": "0.1.0",
-  "description": "Next.js frontend for the Authentication webapp.",
+  "description": "Next.js frontend for the Auth webapp.",
   "private": true,
   "author": "arsantiagolopez",
   "license": "ISC",

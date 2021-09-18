@@ -7,7 +7,7 @@ const SuccessfulEmailSent = ({ email }) => (
     <Icon as={SiMinutemailer} {...styles.icon} />
     <Heading {...styles.message}>
       An email was sent to {email}. Follow the instructions to regain access to
-      Authentication!
+      Auth!
     </Heading>
   </Flex>
 );

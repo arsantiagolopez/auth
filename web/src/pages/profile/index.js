@@ -57,7 +57,7 @@ const Profile = () => {
   return (
     <Layout hideFooter>
       <Head>
-        <title>Edit My Profile - Authentication</title>
+        <title>Edit My Profile - Auth</title>
       </Head>
       <Flex {...styles.wrapper}>
         <Flex {...styles.content}>

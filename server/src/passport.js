@@ -20,10 +20,9 @@ passport.use(
       profileFields: ["id", "email", "name", "picture.width(300)"],
     },
     // Facebook sends back token and profile
-    async (req, accessToken, refreshToken, profile, done) => {
-      const { id, email, name, picture } = profile._json;
-
-      console.log(profile);
+    async (_, __, ___, profile, done) => {
+      const { id, email, first_name, last_name, picture } =
+        profile?._json || {};
 
       // Find Facebook profile by ID
       const existingUser = await models.User.findOne({ where: { id } });
@@ -43,8 +42,8 @@ passport.use(
       // Create user's profile
       await models.UserProfile.create({
         userId: id,
-        name,
-        picture: picture && picture.data.url,
+        name: `${first_name} ${last_name}`,
+        picture: picture?.data?.url,
       });
 
       // Log user in
@@ -62,10 +61,8 @@ passport.use(
       callbackURL: "/auth/google/return",
     },
     // Facebook sends back token and profile
-    async (request, accessToken, refreshToken, profile, done) => {
-      const { id, email, displayName, picture, provider } = profile;
-
-      console.log(id, email, displayName, picture, provider);
+    async (_, __, ___, profile, done) => {
+      const { id, email, displayName, picture, provider } = profile || {};
 
       // Find Google profile by ID
       const existingUser = await models.User.findOne({ where: { id } });

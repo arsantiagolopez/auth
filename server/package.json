@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Backend for the Authentication webapp.",
+  "description": "Backend for the Auth webapp.",
   "main": "index.js",
   "author": "arsantiagolopez",
   "license": "ISC",

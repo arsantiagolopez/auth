@@ -21,6 +21,7 @@ const SESSION_SECRET = Config.sessionSecret;
 const PORT = Config.port;
 const SERVER_URL = Config.api.serverUrl;
 const REDIS_URL = Config.api.redisUrl;
+const DOMAIN = Config.api.domain;
 
 // Express server
 const app = express();
@@ -44,24 +45,26 @@ app.set("trust proxy", 1);
 app.use(
   session({
     name: COOKIE_NAME,
-    store: new RedisStore({
-      client: redisClient,
-      disableTouch: true,
-    }),
-    cookie: {
-      // Lasts 1 year
-      maxAge: 1000 * 60 * 60 * 24 * 7 * 4 * 12,
-      // Set to true if only want to store in HTTPS
-      secure: NODE_ENV === "production",
-      // Prevents client side JS from reading cookie
-      httpOnly: true,
-      // Change from lax to none if different api & web domains
-      sameSite: NODE_ENV === "production" ? "none" : "lax",
-    },
     secret: SESSION_SECRET,
     resave: false,
     // Only save data when needed
     saveUninitialized: false,
+    store: new RedisStore({
+      client: redisClient,
+      disableTouch: true,
+    }),
+    cookie: NODE_ENV !== "development" && {
+      // API domain
+      domain: DOMAIN,
+      // Lasts 1 year
+      maxAge: 1000 * 60 * 60 * 24 * 7 * 4 * 12,
+      // Only set cookies in a secure environment HTTPS
+      secure: true,
+      // Prevents client side JS from reading cookie
+      httpOnly: true,
+      // Strict same site for cookie protection
+      sameSite: "lax",
+    },
   })
 );
 

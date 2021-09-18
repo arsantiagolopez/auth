@@ -49,7 +49,7 @@ const Profile = ({ id }) => {
   return (
     <Layout hideFooter>
       <Head>
-        <title>{name} - Authentication</title>
+        <title>{name} - Auth</title>
       </Head>
       <Flex {...styles.wrapper}>
         <Flex {...styles.content}>
@@ -115,7 +115,7 @@ const Profile = ({ id }) => {
 export const getStaticPaths = async () => {
   const ids = await getStaticIds();
 
-  const paths = ids.map((id) => ({
+  const paths = ids?.map((id) => ({
     params: { id },
   }));
 

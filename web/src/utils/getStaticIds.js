@@ -24,9 +24,8 @@ const getStaticIds = async () => {
   const client = staticUrqlClient();
 
   // Query all userProfile ids
-  const {
-    data: { allUserProfileIds },
-  } = await client.query(AllUserProfileIdsQuery).toPromise();
+  const { data } = await client.query(AllUserProfileIdsQuery).toPromise();
+  const { allUserProfileIds } = data || {};
 
   return allUserProfileIds;
 };

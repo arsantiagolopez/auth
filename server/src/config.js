@@ -22,6 +22,8 @@ export default {
     clientUrl: process.env.CLIENT_URL,
     // Redis URL
     redisUrl: process.env.REDIS_URL,
+    // Cookie domain
+    domain: process.env.DOMAIN,
   },
 
   // Authentication

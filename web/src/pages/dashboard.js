@@ -39,7 +39,7 @@ const Dashboard = ({ repos }) => {
     <UserProvider>
       <Layout hideFooter>
         <Head>
-          <title>Dashboard - Authentication</title>
+          <title>Dashboard - Auth</title>
         </Head>
         <Flex {...styles.wrapper}>
           <Flex {...styles.section} {...styles.left}>
