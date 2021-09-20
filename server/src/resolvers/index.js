@@ -9,6 +9,7 @@ import { sendEmail } from "../utils/sendEmail";
 const COOKIE_NAME = Config.cookieName;
 const CLIENT_URL = Config.api.clientUrl;
 const REDIS_URL = Config.api.redisUrl;
+const DOMAIN = Config.api.domain;
 
 const redisClient = redis.createClient(REDIS_URL);
 
@@ -210,10 +211,8 @@ export default {
         // Destroy redis session
         req.session.destroy((err) => {
           // Clear session cookie
-          res.clearCookie(COOKIE_NAME);
-
+          res.clearCookie(COOKIE_NAME, { domain: DOMAIN });
           if (err) return resolve(false);
-
           return resolve(true);
         });
       }),
