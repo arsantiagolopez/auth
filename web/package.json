@@ -16,7 +16,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@urql/devtools": "^2.0.3",
-    "@urql/exchange-graphcache": "^4.1.1",
+    "@urql/exchange-graphcache": "^4.3.6",
     "focus-visible": "^5.2.0",
     "framer-motion": "^4",
     "graphql": "^15.5.0",
