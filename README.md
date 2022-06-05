@@ -1,7 +1,7 @@
 <div align="center">
     <img src="https://i.ibb.co/m8MNCvM/authentication-logo-06.png" />
     <a href="https://auth.golf" style="color: #303030;"><h1>Auth</h1></a>
-    <h4>Auth is a secure minimal system that displays the core concepts of the authentication & authorization flow of most social media applications.</h4>
+    <h4>Auth is a proof of concept application that displays the core concepts of the authentication & authorization flow of most social media applications.</h4>
 </div>
 
 <div align="center">
