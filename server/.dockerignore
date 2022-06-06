@@ -1,0 +1,10 @@
+# Unnecessary files
+node_modules
+npm-debug.log
+
+# Git related files
+.git
+.gitignore
+
+# Build files
+dist/*
