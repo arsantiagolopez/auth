@@ -1,7 +1,7 @@
 <div align="center">
     <img src="https://i.ibb.co/m8MNCvM/authentication-logo-06.png" />
     <a href="https://auth.golf" style="color: #303030;"><h1>Auth</h1></a>
-    <h4>Auth is a proof of concept application that displays the core concepts of the authentication & authorization flow of most social media applications.</h4>
+    <h4>Auth is a proof-of-concept application that displays the core concepts of the authentication and authorization flow of most modern social media applications.</h4>
 </div>
 
 <div align="center">
@@ -62,11 +62,11 @@
   </tr>
   <tr>
       <td><a href="https://reactjs.org/">React</a></td>
-      <td>To build a component based user interface.</td>
+      <td>Build a component-based user interface.</td>
   </tr>
   <tr>
       <td><a href="https://nextjs.org/">Next.js</a></td>
-      <td>Server side rendering (SSR) of React components.</td>
+      <td>Server-side rendering (SSR) of React components.</td>
   </tr>
   <tr>
       <td><a href="https://formidable.com/open-source/urql/">URQL</a></td>
@@ -116,7 +116,7 @@
     </tr>
     <tr>
         <td><a href="https://redis.io/">Redis</a></td>
-        <td>Store session data in memory for lighting fast queries.</td>
+        <td>Store session data in memory for lightning-fast queries.</td>
     </tr>
     <tr>
         <td><a href="https://sequelize.org/">Sequelize</a></td>
@@ -171,7 +171,7 @@
 
 <h2 id="inspiration">💡 Inspiration</h2>
 
-Authentication & authorization are essential parts of every application. As my first project ever, I wanted to tackle the core principles of the register and login flow, including email password resets, email change, and basic personal profile info updates. I also wanted to make it as closely related to a social media application as possible, as everyone is familiar with the top social media interfaces.
+Authentication & authorization are essential parts of every application. For my first project ever, I wanted to tackle the core principles of the register and login flow, including email password resets, email change, and basic personal profile info updates. I also wanted to closely mimic the process for most modern social media applications, as everyone is familiar with these interfaces.
 
 <h2 id="objectives">🚀 Learning Objectives</h2>
 
